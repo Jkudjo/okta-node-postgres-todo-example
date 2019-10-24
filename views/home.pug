@@ -1,0 +1,23 @@
+extends layout
+
+block variables
+  - var title = 'To Do List - Home'
+
+block content
+    h2.text-center #{title}
+
+    table.table.table-striped
+        thead.thead-light
+            tr
+                th Title
+                th Description
+                th Is Complete
+        tbody
+            each item, i in items
+                tr
+                    td #{item.title}
+                    td #{item.description}
+                    td 
+                        form(action="items/complete", method="post")
+                            input(type="hidden", name="id", value=item.id)
+                            button.btn.btn-secondary(onClick='this.submit') Mark As Complete

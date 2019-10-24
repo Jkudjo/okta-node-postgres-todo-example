@@ -1,0 +1,18 @@
+extends layout
+
+block variables
+  - var title = 'Create To Do Item'
+
+block content
+    div.card
+        h5.card-header Create To Do Item
+        div.card-body
+            form(action="items/create", method="post")
+                div.form-group
+                    label(for="Title") Title
+                    input#title.form-control(type="text", name="title")
+                div.form-group   
+                    label(for="description") Description
+                    textarea#description.form-control(name="description", cols="30", rows="10")
+                div.form-group
+                    button.btn.btn-primary Save

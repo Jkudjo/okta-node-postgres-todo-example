@@ -1,0 +1,26 @@
+{
+  "name": "todoapplication",
+  "version": "1.0.0",
+  "description": "A brief Demo Application showcasing using PostgreSQL with Node.Js ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@okta/oidc-middleware": "^2.0.0",
+    "@okta/okta-sdk-nodejs": "^2.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.14.0",
+    "express-session": "^1.17.0",
+    "http-status": "^0.2.5",
+    "pg": "^7.12.1",
+    "pug": "^2.0.4",
+    "sequelize": "^5.19.3"
+  },
+  "keywords": [
+    "node",
+    "postgreSQL"
+  ],
+  "author": "Nik Fisher - nik@fishbowlllc.com",
+  "license": "ISC"
+}
