@@ -5,7 +5,7 @@ const serverSettings = {
 const dbSettings = {
     database: process.env.DB || 'todolist',
     user: process.env.DB_USER || 'postgres',
-    password: process.env.DB_PASS || 'Nf879456',
+    password: process.env.DB_PASS || 'your password',
     server: process.env.DB_SERVER || 'localhost'
 }
 
