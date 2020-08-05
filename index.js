@@ -2,7 +2,7 @@
 
 const server = require('./server/server')
 const config = require('./config/')
-const repository = require('./repository/todolist_repository.js')
+const repository = require('./repository/todoitems_repository.js')
 
 const { EventEmitter } = require('events');
 const mediator = new EventEmitter();
